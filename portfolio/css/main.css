@@ -475,15 +475,21 @@
    color: #fff;
    text-align: right;
 }
-.page a {
+.page ul li a {
    display: block;
    margin-bottom: 20px;
    padding-right: 40px;
 }
-.page a span {
+.page ul li.on a {
+   font-weight: 700;
+}
+.page ul li a:hover {
+   font-weight: 700;
+}
+.page ul li a span {
    position: relative;
 }
-.page span::after {
+.page ul li a span::after {
    position: absolute;
    top: 4px;
    right: -30px;

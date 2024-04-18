@@ -20,15 +20,28 @@ $(document).ready(function(){
 					$('header').removeClass('black')
 				}
 
-				$('header .gnb ul li').on('click', function(){
-					$('header .gnb ul li').removeClass('on')
-					$(this).addClass('on')
-				 })
+				if(this.realIndex == 0){
+					$('header .gnb ul li, .page ul li').removeClass('on')
+					$('header .gnb ul li:nth-child(1), .page ul li:nth-child(1)').addClass('on')
+				}else if(this.realIndex == 1){
+					$('header .gnb ul li, .page ul li').removeClass('on')
+					$('header .gnb ul li:nth-child(2), .page ul li:nth-child(2)').addClass('on')
+				}else if(this.realIndex == 2){
+					$('header .gnb ul li, .page ul li').removeClass('on')
+					if(this.previousIndex == 1){
+						$('header .gnb ul li:nth-child(3), .page ul li:nth-child(3)').addClass('on')
+					}else{
+						$('header .gnb ul li:nth-child(4), .page ul li:nth-child(4)').addClass('on')
+					}
+				}else if(this.realIndex == 3){
+					$('header .gnb ul li, .page ul li').removeClass('on')
+					$('header .gnb ul li:last-child, .page ul li:last-child').addClass('on')
+				}
 			}
 		},
 	});
 
-	const row_swiper = new Swiper('.swiperH', { /* 팝업을 감싼는 요소의 class명 */
+	const row_swiper = new Swiper('.swiperH', { /* 팝업을 감싸는 요소의 class명 */
 		direction: "horizontal",
 		slidesPerView: 1,
 		spaceBetween: 0,
@@ -37,6 +50,17 @@ $(document).ready(function(){
 		keyboard: true,
 		ally: true,
 		nested: true,
+		on: {
+			slideChange: function(){
+				if(this.realIndex == 0){
+					$('header .gnb ul li, .page ul li').removeClass('on')
+					$('header .gnb ul li:nth-child(3), .page ul li:nth-child(3)').addClass('on') //세번째 li
+				}else if(this.realIndex == 1){
+					$('header .gnb ul li, .page ul li').removeClass('on')
+					$('header .gnb ul li:nth-child(4), .page ul li:nth-child(4)').addClass('on') //네번째 li
+				}
+			}
+		}
 	});
 
 	$('.gnb li a[data-href="home"], .page a[data-href="home"]').on('click', function(){
