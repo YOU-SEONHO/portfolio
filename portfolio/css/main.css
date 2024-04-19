@@ -196,7 +196,7 @@
    animation-timing-function: 1;
 }
 .about .progress li svg path {
-   fill:transparent;stroke:url(#SVGID_1_);stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;
+   fill: transparent;stroke:url(#SVGID_1_);stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;
 }
 @keyframes circle0 {
    0% { stroke-dashoffset: 500; }
