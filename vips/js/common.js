@@ -85,10 +85,10 @@ $(document).ready(function(){
       $("html, body").css({overflow : "visible", height : "auto"}).unbind('scroll touchmove mousewheel');
    })
 
-   $('footer .f_nav button.f_nav_open').on('click',function(){
+   $('footer .f_nav .Privacy button.f_nav_open').on('click',function(){
       $('footer .f_nav').addClass('open')
    })
-   $('footer .f_nav button.f_nav_close').on('click',function(){
+   $('footer .f_nav .Privacy button.f_nav_close').on('click',function(){
       $('footer .f_nav').removeClass('open')
    })
 })

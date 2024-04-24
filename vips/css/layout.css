@@ -306,15 +306,21 @@ footer .f_nav .Privacy ul {
 footer .f_nav .Privacy ul li {
    margin-right: 35px;
 }
+footer .f_nav .Privacy ul li a span {
+   font-weight: 700;
+}
 footer .f_nav .f_info {
    margin: 30px 0;
    line-height: 35px;
 }
-footer .f_nav .f_info span {
+footer .f_nav .f_info ul {
+   display: flex;
+}
+footer .f_nav .f_info ul li {
    margin-right: 30px;
    position: relative;
 }
-footer .f_nav .f_info span::after {
+footer .f_nav .f_info ul li::after {
    position: absolute;
    top: 5px;
    right: -19px;
@@ -322,11 +328,138 @@ footer .f_nav .f_info span::after {
    border-right: 1px solid rgba(255, 255, 255, 0.2);
    content: "";
 }
-footer .f_nav .f_info span.line::after {
+footer .f_nav .f_info ul li.line::after {
+   position: absolute;
+   top: 5px;
+   right: -19px;
+   height: 13px;
+   border-right: 1px solid rgba(255, 255, 255, 0.2);
+   content: "";
    display: none;
 }
 footer .f_nav .f_logo {
    position: absolute;
    bottom: 106px;
    right: 17%;
+}
+@media screen and (max-width:1320px){
+   footer .f_nav {
+      height: 330px;
+      padding: 40px 0 40px 0;
+   }
+   footer .f_nav .Privacy ul li {
+      margin-right: 35px;
+   }
+   footer .f_nav .Privacy ul li a {
+      word-break: keep-all;
+   }
+   footer .f_nav .f_info {
+      margin: 30px 0;
+      line-height: 30px;
+   }
+   footer .f_nav .f_info br {
+      display: none;
+   }
+   footer .f_nav .f_info ul li.line::after {
+      display: block;
+   }
+   footer .f_nav .f_logo {
+      bottom: 85px;
+      right: 2%;
+   }
+}
+@media screen and (max-width:1024px){
+   footer .familysite {
+      height: 50px;
+   }
+   footer .familysite .list {
+      top: 6px;
+   }
+   footer .familysite .list a img {
+      width: 80px;
+   }
+   footer .familysite .list a.the img {
+      width: 30px;
+   }
+   footer .f_nav {
+      height: 440px;
+      padding: 40px 0;
+   }
+   footer .f_nav .Privacy button {
+      display: block;
+      width: 100%;
+      line-height: 30px;
+      position: relative;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      padding: 0 20px;
+   }
+   footer .f_nav .Privacy button::after {
+      position: absolute;
+      right: 20px;
+      top: 11px;
+      width: 12px;
+      height: 7px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.05383 6.70762L0 5.65383L5.65383 0L11.3077 5.65383L10.2538 6.70762L5.65383 2.10762L1.05383 6.70762Z' fill='white' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
+      content: "";
+   }
+   footer .f_nav .Privacy button.f_nav_close::after {
+      transform: rotate(180deg);
+   }
+   footer .f_nav .Privacy button.f_nav_open {
+      display: block;
+   }
+   footer .f_nav .Privacy button.f_nav_close {
+      display: none;
+   }
+   footer .f_nav.open button.f_nav_open {
+      display: none;
+   }
+   footer .f_nav.open button.f_nav_close {
+      display: block;
+   }
+   footer .f_nav .Privacy ul {
+      display: none;
+      position: absolute;
+      left: 21px;
+      top: -265px;
+      width: 94.5%;
+      background-color: #4b3e33;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 20px;
+      text-align: center;
+   }
+   footer .f_nav.open ul {
+      display: block;
+   }
+   footer .f_nav .Privacy ul li {
+      margin: 10px 0;
+   }
+   footer .f_nav .Privacy ul li a {
+      line-height: 20px;
+   }
+   footer .f_nav .f_info {
+      margin: 30px 0;
+      line-height: 30px;
+      display: block;
+   }
+   footer .f_nav .f_info br {
+      display: none;
+   }
+   footer .f_nav .f_info ul {
+      display: block;
+   }
+   footer .f_nav .f_info ul li::after {
+      display: none;
+   }
+   footer .f_nav .f_info ul li.line::after {
+      display: none;
+   }
+   footer .f_nav .f_logo {
+      bottom: 82px;
+      right: 3%;
+   }
 }
