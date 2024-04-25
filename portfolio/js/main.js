@@ -58,7 +58,9 @@ $(document).ready(function(){
 				}else if(this.realIndex == 1){
 					$('header .gnb ul li, .page ul li').removeClass('on')
 					$('header .gnb ul li:nth-child(4), .page ul li:nth-child(4)').addClass('on') //네번째 li
+				}else if(this.realIndex == 2){
 					$('header .gnb ul li, .page ul li').removeClass('on')
+					$('header .gnb ul li:nth-child(5), .page ul li:nth-child(5)').addClass('on')
 				}
 			}
 		}
