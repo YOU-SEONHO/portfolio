@@ -349,18 +349,32 @@
    }
    .menu .more01 a {
       position: relative;
+      border: 1px solid #3d3d3d;
+      border-radius: 20px;
+      line-height: 30px;
+      padding: 3px 40px 3px 20px;
    }
    .menu .more01 a::after {
       position: absolute;
-      top: 3px;
-      right: -25px;
-      width: 15px;
-      height: 15px;
+      top: 9px;
+      right: 18px;
+      width: 9px;
+      height: 9px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       content: "";
       background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.27618 4.826H0V3.94857H7.27618L3.85848 0.61646L4.5 0L9 4.38728L4.5 8.77457L3.85848 8.15811L7.27618 4.826Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
+   }
+   .menu .more01 a:hover {
+      background-color: #3d3d3d;
+      color: #fff;
+   }
+   .menu .more01 a:hover::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.27618 4.94999H0V4.05001H7.27618L3.85848 0.632297L4.5 0L9 4.5L4.5 9L3.85848 8.3677L7.27618 4.94999Z' fill='white'/%3E%3C/svg%3E%0A");
+   }
+   .menu .inner .mobile {
+      padding: 10px 0 20px 0;
    }
 }
 
@@ -516,14 +530,20 @@
       position: relative;
       border: 1px solid #3d3d3d;
       border-radius: 20px;
-      line-height: 30px;
-      padding: 6px 40px 6px 20px;
-      text-align: center;
+      line-height: 20px;
+      padding: 3px 30px 3px 20px;
+   }
+   .salad .list .more01 a:hover {
+      background-color: #3d3d3d;
+      color: #fff;
+   }
+   .salad .list .more01 a:hover::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.27618 4.94999H0V4.05001H7.27618L3.85848 0.632297L4.5 0L9 4.5L4.5 9L3.85848 8.3677L7.27618 4.94999Z' fill='white'/%3E%3C/svg%3E%0A");
    }
    .salad .list .more01 a::after {
       position: absolute;
-      bottom: 11px;
-      right: 19px;
+      bottom: 9px;
+      right: 15px;
       width: 9px;
       height: 9px;
       background-repeat: no-repeat;
@@ -717,6 +737,7 @@
       line-height: 20px;
       padding: 3px 30px 3px 12px;
       width: 120px;
+      margin-top: 0;
       margin-right: -5%;
    }
    .event .list span.more::after {
@@ -725,6 +746,13 @@
       right: 15px;
       width: 9px;
       height: 9px;
+   }
+   .event .list ul li a:hover span.more {
+      background-color: #3d3d3d;
+      color: #fff;
+   }
+   .event .list ul li a:hover span.more::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.27618 4.94999H0V4.05001H7.27618L3.85848 0.632297L4.5 0L9 4.5L4.5 9L3.85848 8.3677L7.27618 4.94999Z' fill='white'/%3E%3C/svg%3E%0A");
    }
 }
 @media screen and (max-width:768px) {

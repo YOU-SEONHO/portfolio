@@ -28,10 +28,10 @@ $(document).ready(function(){
 					$('header .gnb ul li:nth-child(2), .page ul li:nth-child(2)').addClass('on')
 				}else if(this.realIndex == 2){
 					$('header .gnb ul li, .page ul li').removeClass('on')
-					if(this.previousIndex == 1){
+					if(this.previousIndex == 1){//위에서 아래로 내려왔을때
 						$('header .gnb ul li:nth-child(3), .page ul li:nth-child(3)').addClass('on')
-					}else{
-						$('header .gnb ul li:nth-child(4), .page ul li:nth-child(4)').addClass('on')
+					}else{//아래에서 위로 올라왔을때
+						$('header .gnb ul li:nth-last-child(2), .page ul li:nth-last-child(2)').addClass('on')
 					}
 				}else if(this.realIndex == 3){
 					$('header .gnb ul li, .page ul li').removeClass('on')
