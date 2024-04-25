@@ -58,6 +58,7 @@ $(document).ready(function(){
 				}else if(this.realIndex == 1){
 					$('header .gnb ul li, .page ul li').removeClass('on')
 					$('header .gnb ul li:nth-child(4), .page ul li:nth-child(4)').addClass('on') //네번째 li
+					$('header .gnb ul li, .page ul li').removeClass('on')
 				}
 			}
 		}
@@ -77,7 +78,11 @@ $(document).ready(function(){
 		col_swiper.slideTo(2, 500);
 		row_swiper.slideTo(1, 500);
 	});
+	$('.gnb li a[data-href="portfolio3"], .page a[data-href="portfolio3"]').on('click', function(){
+		col_swiper.slideTo(2, 500);
+		row_swiper.slideTo(2, 500);
+	});
 	$('.gnb li a[data-href="contact"], .page a[data-href="contact"]').on('click', function(){
-		col_swiper.slideTo(3, 500);
+		col_swiper.slideTo(4, 500);
 	});
 })
