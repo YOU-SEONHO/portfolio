@@ -385,7 +385,7 @@
 .salad .salad_tit {
    position: relative;
    width: 306px;
-   padding-top: 89px;
+   padding: 89px 0 89px 0;
    margin-left: 150px;
    text-align: center;
 }
@@ -408,7 +408,7 @@
 }
 .salad .salad_tit a::after {
    position: absolute;
-   bottom: 86px;
+   bottom: 90px;
    right: 117px;
    width: 15px;
    height: 15px;
