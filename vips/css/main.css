@@ -366,8 +366,16 @@
    }
 }
 
+.salad .swiper {
+   height: auto
+}
+.salad .swiper-slide img {
+   display: block;
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
 .salad {
-   height: 580px;
    background-color: #E9E2DC;
 }
 .salad .inner {
@@ -400,7 +408,7 @@
 }
 .salad .salad_tit a::after {
    position: absolute;
-   bottom: 1px;
+   bottom: 86px;
    right: 117px;
    width: 15px;
    height: 15px;
@@ -414,7 +422,7 @@
    text-align: center;
    margin: 0 auto;
    width: 60%;
-   padding-top: 141px;
+   padding: 141px 0 120px 0;
 }
 .salad .list ul {
    display: flex;
@@ -423,10 +431,10 @@
    margin-right: 28px;
    font-family: 'Gowun Batang';
 }
-.salad .list .photo {
+.salad .list ul li span.photo {
    width: 100%;
 }
-.salad .list img {
+.salad .list ul li img {
    margin-bottom: 20px;
    width: 100%;
    height: 100%;
@@ -435,9 +443,6 @@
    display: none;
 }
 @media screen and (max-width:1320px) {
-   .salad {
-      height: 400px;
-   }
    .salad .salad_tit {
       position: relative;
       width: 306px;
@@ -464,7 +469,7 @@
       right: 110px;
    }
    .salad .list {
-      padding-top: 80px;
+      padding: 80px 0 100px 0;
    }
    .salad .list ul li {
       margin-right: 33px;
@@ -472,7 +477,6 @@
 }
 @media screen and (max-width:1024px) {
    .salad {
-      height: 490px;
       background-color: transparent;
    }
    .salad .inner {
@@ -513,7 +517,7 @@
    }
    .salad .list .more01::after {
       position: absolute;
-      bottom: 0;
+      bottom: 1px;
       right: 42%;
       width: 15px;
       height: 15px;
@@ -525,9 +529,6 @@
    }
 }
 @media screen and (max-width:768px) {
-   .salad {
-      height: 336px;
-   }
    .salad .salad_tit h2 {
       font-size: 30px;
    }
@@ -550,7 +551,7 @@
 }
 
 .event {
-   margin: 150px 0 80px 0;
+   margin: 120px 0 80px 0;
 }
 .event .event_tit h2 {
    font-family: 'Gowun Batang';

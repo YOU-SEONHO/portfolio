@@ -313,14 +313,11 @@ footer .f_nav .f_info {
    margin: 30px 0;
    line-height: 35px;
 }
-footer .f_nav .f_info ul {
-   display: flex;
-}
-footer .f_nav .f_info ul li {
+footer .f_nav .f_info span {
    margin-right: 30px;
    position: relative;
 }
-footer .f_nav .f_info ul li::after {
+footer .f_nav .f_info span::after {
    position: absolute;
    top: 5px;
    right: -19px;
@@ -328,13 +325,8 @@ footer .f_nav .f_info ul li::after {
    border-right: 1px solid rgba(255, 255, 255, 0.2);
    content: "";
 }
-footer .f_nav .f_info ul li.line::after {
-   position: absolute;
-   top: 5px;
-   right: -19px;
-   height: 13px;
-   border-right: 1px solid rgba(255, 255, 255, 0.2);
-   content: "";
+footer .f_nav .f_info span.line01::after,
+footer .f_nav .f_info span.line02::after {
    display: none;
 }
 footer .f_nav .f_logo {
@@ -360,8 +352,15 @@ footer .f_nav .f_logo {
    footer .f_nav .f_info br {
       display: none;
    }
-   footer .f_nav .f_info ul li.line::after {
+   footer .f_nav .f_info span.line01::after {
       display: block;
+      top: 36px;
+      right: 637px;
+   }
+   footer .f_nav .f_info span.line02::after {
+      display: block;
+      top: 5px;
+      right: -194px;
    }
    footer .f_nav .f_logo {
       bottom: 85px;
@@ -449,17 +448,29 @@ footer .f_nav .f_logo {
    footer .f_nav .f_info br {
       display: none;
    }
-   footer .f_nav .f_info ul {
+   footer .f_nav .f_info span {
       display: block;
    }
-   footer .f_nav .f_info ul li::after {
-      display: none;
-   }
-   footer .f_nav .f_info ul li.line::after {
+   footer .f_nav .f_info span::after,
+   footer .f_nav .f_info span.line01::after,
+   footer .f_nav .f_info span.line02::after {
       display: none;
    }
    footer .f_nav .f_logo {
       bottom: 82px;
       right: 3%;
+   }
+}
+@media screen and (max-width:768px){
+   footer .f_nav {
+      height: 550px;
+      padding: 40px 0;
+   }
+   footer .f_nav .f_logo {
+      bottom: 60px;
+      right: calc(50% - 6%);
+   }
+   footer .f_nav .f_logo img {
+      width: 57px;
    }
 }
