@@ -99,20 +99,20 @@
 .menu .menu_tit .more {
    position: absolute;
    bottom: 0;
-   right: 24px;
+   right: 18px;
    color: #3d3d3d;
 }
 .menu .menu_tit .more::after {
    position: absolute;
-   bottom: 0;
-   right: -23px;
-   width: 15px;
-   height: 15px;
+   bottom: 4px;
+   right: -17px;
+   width: 9px;
+   height: 9px;
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
    content: "";
-   background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35786 11.6421 0 7.5 0C3.35786 0 0 3.35786 0 7.5C0 11.6421 3.35786 15 7.5 15ZM5.83337 4.28887L8.95222 7.50318L5.83337 10.7111L6.35729 11.25L10 7.50318L6.35729 3.75L5.83337 4.28887Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
+   background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.27618 4.826H0V3.94857H7.27618L3.85848 0.61646L4.5 0L9 4.38728L4.5 8.77457L3.85848 8.15811L7.27618 4.826Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
 }
 .menu .inner .menu01 {
    display: flex;
@@ -177,7 +177,6 @@
 .menu .more01 {
    display: none;
 }
-
 @media screen and (max-width:1320px) {
    .menu {
       margin: 80px 0 120px 0;
@@ -306,9 +305,6 @@
    .menu .menu_tit p {
       font-size: 20px;
    }
-   .menu .menu_tit .more {
-      display: none;
-   }
    .menu .inner .group {
       margin-right: 16px;
    }
@@ -341,28 +337,30 @@
       margin-bottom: 0;
       line-height: 18px;
    }
+}
+@media screen and (max-width:440px) {
+   .menu .menu_tit .more {
+      display: none;
+   }
    .menu .more01 {
-      color: #3d3d3d;
       display: block;
-      position: relative;
+      color: #3d3d3d;
       text-align: center;
    }
-   .menu .more01::after {
+   .menu .more01 a {
+      position: relative;
+   }
+   .menu .more01 a::after {
       position: absolute;
-      bottom: 0;
-      right: 38%;
+      top: 3px;
+      right: -25px;
       width: 15px;
       height: 15px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       content: "";
-      background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35786 11.6421 0 7.5 0C3.35786 0 0 3.35786 0 7.5C0 11.6421 3.35786 15 7.5 15ZM5.83337 4.28887L8.95222 7.50318L5.83337 10.7111L6.35729 11.25L10 7.50318L6.35729 3.75L5.83337 4.28887Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
-   }
-}
-@media screen and (max-width:500px) {
-   .menu .more01::after {
-      right: 30%;
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.27618 4.826H0V3.94857H7.27618L3.85848 0.61646L4.5 0L9 4.38728L4.5 8.77457L3.85848 8.15811L7.27618 4.826Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
    }
 }
 
@@ -408,15 +406,15 @@
 }
 .salad .salad_tit a::after {
    position: absolute;
-   bottom: 90px;
-   right: 117px;
-   width: 15px;
-   height: 15px;
+   bottom: 93px;
+   right: 122px;
+   width: 9px;
+   height: 9px;
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
    content: "";
-   background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35786 11.6421 0 7.5 0C3.35786 0 0 3.35786 0 7.5C0 11.6421 3.35786 15 7.5 15ZM5.83337 4.28887L8.95222 7.50318L5.83337 10.7111L6.35729 11.25L10 7.50318L6.35729 3.75L5.83337 4.28887Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
+   background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.27618 4.826H0V3.94857H7.27618L3.85848 0.61646L4.5 0L9 4.38728L4.5 8.77457L3.85848 8.15811L7.27618 4.826Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
 }
 .salad .list {
    text-align: center;
@@ -485,7 +483,7 @@
    .salad .salad_tit {
       width: auto;
       height: auto;
-      padding-top: 0;
+      padding: 0;
       margin-left: 0;
    }
    .salad .salad_tit img {
@@ -510,22 +508,29 @@
    }
    .salad .list .more01 {
       display: block;
-      position: relative;
       text-align: center;
       margin-top: 40px;
       color: #3d3d3d;
    }
-   .salad .list .more01::after {
+   .salad .list .more01 a {
+      position: relative;
+      border: 1px solid #3d3d3d;
+      border-radius: 20px;
+      line-height: 30px;
+      padding: 6px 40px 6px 20px;
+      text-align: center;
+   }
+   .salad .list .more01 a::after {
       position: absolute;
-      bottom: 1px;
-      right: 42%;
-      width: 15px;
-      height: 15px;
+      bottom: 11px;
+      right: 19px;
+      width: 9px;
+      height: 9px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       content: "";
-      background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35786 11.6421 0 7.5 0C3.35786 0 0 3.35786 0 7.5C0 11.6421 3.35786 15 7.5 15ZM5.83337 4.28887L8.95222 7.50318L5.83337 10.7111L6.35729 11.25L10 7.50318L6.35729 3.75L5.83337 4.28887Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.27618 4.826H0V3.94857H7.27618L3.85848 0.61646L4.5 0L9 4.38728L4.5 8.77457L3.85848 8.15811L7.27618 4.826Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
    }
 }
 @media screen and (max-width:768px) {
@@ -545,8 +550,17 @@
    .salad .list .more01 {
       margin-top: 20px;
    }
-   .salad .list .more01::after {
-      right: 31%;
+   .salad .list .more01 a {
+      position: relative;
+      border: 1px solid #3d3d3d;
+      border-radius: 20px;
+      line-height: 25px;
+      padding: 4px 35px 4px 15px;
+      text-align: center;
+   }
+   .salad .list .more01 a::after {
+      bottom: 5px;
+      right: 11px;
    }
 }
 
@@ -624,7 +638,7 @@
 }
 .event .list span.more::after {
    position: absolute;
-   top: 4px;
+   top: 5px;
    right: -15px;
    width: 9px;
    height: 9px;
@@ -697,6 +711,21 @@
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical
    }
+   .event .list ul li a span.more {
+      border: 1px solid #3d3d3d;
+      border-radius: 20px;
+      line-height: 20px;
+      padding: 3px 30px 3px 12px;
+      width: 120px;
+      margin-right: -5%;
+   }
+   .event .list span.more::after {
+      position: absolute;
+      top: 9px;
+      right: 15px;
+      width: 9px;
+      height: 9px;
+   }
 }
 @media screen and (max-width:768px) {
    .event {
@@ -724,8 +753,17 @@
    .event .list span.name {
       font-size: 15px;
    }
-   .event .list span.more {
+   .event .list ul li a span.more {
+      border-radius: 20px;
+      line-height: 18px;
+      padding: 3px 25px 3px 5px;
+      width: 100px;
+      margin-left: 0;
       margin-top: 10px;
+   }
+   .event .list span.more::after {
+      top: 8px;
+      right: 8px;
    }
 }
 
