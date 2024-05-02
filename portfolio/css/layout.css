@@ -25,6 +25,8 @@ header .logo a {
    display: block;
    width: 147px;
    height: 24px;
+   font-size: 0;
+   line-height: 0;
    background: url(../images/common/YOU_SEONHO_W.svg) no-repeat center center / contain;
 }
 header .gnb ul {

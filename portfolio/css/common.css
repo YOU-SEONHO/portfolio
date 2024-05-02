@@ -5,7 +5,6 @@
             문자스타일 등의 기본스타일만 저장 */
 
 @charset "utf-8";
-
 *::selection {
     background-color: #1d1d1d;
     color: #fff;
